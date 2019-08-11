@@ -23,7 +23,7 @@ bot.on("message", async message => {
     }
     let curxp = xp[message.author.id].xp;
     let curlvl = xp[message.author.id].level;
-    let nxtlvl = xp[message.author.id].level * 300;
+    let nxtlvl = xp[message.author.id].level * 500;
     xp[message.author.id].xp = curxp + xpAdd;
 
     if(nxtlvl <= xp[message.author.id].xp) {
